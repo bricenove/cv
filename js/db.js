@@ -89,7 +89,7 @@ const langEl = document.querySelector('.langWrap');
 			  "english": 
 			  {
 			    "t2": "About Me",
-			    "p1": "I'm a student, passionate about technology and innovation. I've been dedicating to web design and frontend development for about 3 years participating in projects where I had to work in different development environments and performing different tasks. I'd like to be part of a team where innovation and creativity are encouraged.",
+			    "p1": "I'm a student, passionate about technology and innovation. I've been dedicating to web design and FrontEnd development for about 3 years participating in projects where I had to work in different development environments and performing different tasks. I'd like to be part of a team where innovation and creativity are encouraged.",
 			  	"s1": "Honesty",
 			  	"s2": "Coworking",
 			  	"s3": "Creativity",
@@ -130,7 +130,7 @@ const langEl = document.querySelector('.langWrap');
 			  {
 			    
 			    "t2": "Sobre mí",
-			    "p1": "Soy estudiante, entusiasta de la tecnología y la innovación. Me he dedicado al diseño web y desarrollo frontend desde hace más de 3 años participando en proyectos donde tuvo que desenvolverme en distintos entornos de desarrollo y desempeñando diferentes tareas. Me gustaría formar parte de un equipo donde se incentive la innovación y la creatividad.",
+			    "p1": "Soy estudiante, entusiasta de la tecnología y la innovación. Me he dedicado al diseño web y desarrollo FrontEnd desde hace más de 3 años participando en proyectos donde tuvo que desenvolverme en distintos entornos de desarrollo y desempeñando diferentes tareas. Me gustaría formar parte de un equipo donde se incentive la innovación y la creatividad.",
 			    "s1": "Honestidad",
 			    "s2": "Trabajo en equipo",
 			    "s3": "Creatividad",
