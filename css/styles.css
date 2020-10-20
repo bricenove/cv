@@ -30,6 +30,7 @@
      -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
    	  content:"MIGUEL BRICEÑO";
+	  line-height: 1;
 	  position: absolute;
 	  font-size: 3rem;
 	  text-align: center;
