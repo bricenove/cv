@@ -1,3 +1,7 @@
+window.addEventListener('load',function(){
+  document.querySelector('body').classList.add("loaded")  
+});
+
 const translate = document.querySelectorAll(".translate");
 const title = document.querySelector(".title");
 const header = document.querySelector("header"); 
