@@ -4,6 +4,113 @@
     src: url("../media/font.otf");
 }
 
+
+#loader-wrapper {
+  position:fixed;
+  top:0;
+  left:0;
+  width:100%;
+  height:100%;
+  z-index:1000;
+}
+#loader {
+  display:block;
+  position: relative;
+  z-index:1001;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+#loader:after {
+	background: rgb(227,251,255);
+	background: linear-gradient(317deg, rgba(227,251,255,1) 0%, rgba(217,221,224,0) 100%);
+    background-size: 400% 400%;
+     -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+   	  content:"MIGUEL BRICEÑO";
+	  position: absolute;
+	  font-size: 3rem;
+	  text-align: center;
+	  border:3px solid transparent;
+	  font-weight: 900;
+	  -webkit-animation: spin 5s alternate infinite;
+	  animation: spin 5s ease infinite;
+}
+
+#loader:before {
+	background: rgb(64,228,255);
+background: linear-gradient(317deg, rgba(64,228,255,1) 7%, rgba(217,221,224,0.4150035014005602) 100%);
+    background-size: 400% 400%;
+     -webkit-background-clip: text;
+ 	 -webkit-text-fill-color: transparent;
+   	  content:"LOADING";
+	  position: absolute;
+	  font-size: 3rem;
+	  font-weight: 600;
+	  -webkit-animation: sipin 5s alternate infinite;
+	  animation: sipin 5s ease infinite;
+}
+
+
+@-webkit-keyframes spin {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 100%; }
+  100% {background-position: 0% 50% opacity: 0%;}
+}
+@keyframes spin {
+  0% {background-position: 0% 50%; }
+  50% {background-position: 100% 100%; }
+  100% {background-position: 0% 50% opacity: 0%;}
+}
+
+@-webkit-keyframes sipin {
+  0% {background-position: 0% 50%; }
+  50% {background-position: 100% 100%; opacity: 0%;}
+  100% {background-position: 0% 50% }
+}
+@keyframes sipin {
+  0% {background-position: 0% 50%; }
+  50% {background-position: 100% 100%; opacity: 0%;}
+  100% {background-position: 0% 50% }
+}
+
+#loader-wrapper .loader-section {
+  position:fixed;
+  top:0;
+  background:#151515;
+  width:51%;
+  height:100%;
+  z-index:1000;
+}
+
+#loader-wrapper .loader-section.section-left {
+  left:0
+}
+#loader-wrapper .loader-section.section-right {
+  right:0;
+}
+
+/* Loaded Styles */
+.loaded #loader-wrapper .loader-section.section-left {
+  transform: translateX(-100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+}
+.loaded #loader-wrapper .loader-section.section-right {
+  transform: translateX(100%);
+  transition: all 0.7s 0.3s cubic-bezier(0.645,0.045,0.355,1.000);
+}
+.loaded #loader {
+  opacity: 0;
+  transition: all 0.3s ease-out;
+}
+.loaded #loader-wrapper {
+  visibility: hidden;
+  transform:translateY(-100%);
+  transition: all 0.3s 1s ease-out;
+}
+
 * {
 	margin: 0;
 	padding: 0;
